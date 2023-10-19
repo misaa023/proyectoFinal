@@ -24,7 +24,7 @@ const getProductos = async () => {
         // creo mi boton de comprar
         const btnComprar = document.createElement('button');
         btnComprar.className = 'btn-comprar';
-        btnComprar.innerText = 'Comrar';
+        btnComprar.innerText = 'Añadir';
         contenido.append(btnComprar);
 
         // funcion que me permite realizar la compra de una bebida y lo suma al carrito
