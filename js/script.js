@@ -35,6 +35,10 @@ const getProductos = async () => {
                 nombre: producto.nombre,
                 precio: producto.precio,
             });
+             // agrego msj para saber que agrego productos al carrito
+            toastr.success("Se cargo correctamente!","Carrito!", {
+                positionClass: "toast-top-right",
+            });
             console.log(carrito);
             // cada vez que compro un producto lo almaceno en el local storage
             stlocal();
